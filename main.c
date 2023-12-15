@@ -5,7 +5,6 @@ struct nod{//structura pentru momentul cand a sunat sau a fost sunat un anumit n
     int ora;
     int minut;
     int secunda;
-    char t[25];//sir de caractere de care ma voi folosi la final pentru afisare pentru a nu afisa pentru un anumit numar si momentele de timp ale numarului precedent,fapt ce se intampla datorita recursivitatii functiei
     struct nod* left;
     struct nod* right;
 };
@@ -114,7 +113,7 @@ int main() {
         {
             printf("\nIntroduceti numarul de telefon: ");
             scanf("%s", s);
-            printf("\nIntroduceti tipul(primit/efectuat):");
+            printf("\nIntroduceti tipul apelului(primit/efectuat):");
             scanf("%s",tip);
             printf("\nIntroduceti ora apelului:");
             scanf("%d",&o);
